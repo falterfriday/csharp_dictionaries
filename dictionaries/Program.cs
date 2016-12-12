@@ -32,6 +32,16 @@ namespace dictionaries
             {
                 Console.WriteLine(key + ": " + inventory[key]);
             }
+
+            double value;
+            if (inventory.TryGetValue("figs", out value))
+            {
+                Console.WriteLine("You have " + value + " figs");
+            }
+            else
+            {
+                Console.WriteLine("No figs");
+            }
         }
     }
 }
