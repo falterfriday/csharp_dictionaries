@@ -17,7 +17,6 @@ namespace dictionaries
             inventory.Add("bananas", 10);
 
             var keys = inventory.Keys;
-            Console.WriteLine(keys);
             Console.WriteLine("number of items: " + keys.Count);
 
             foreach (var key in keys)
